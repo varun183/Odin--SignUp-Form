@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+
+    <div class="left-side">
+        <div class="logo">
+            <img class="odin" src="media/odin-logo.png">
+            <p class="odin-text">ODIN</p>
+        </div>
+        <p class="credit">Photo by <a href="https://unsplash.com/@evgenievgenief" target="_blank" class="link">Evgeni Evgeniev</a> on <a href="https://unsplash.com/" target="_blank" class="link">Unsplash</a></p>
+    </div>
+    <div class="right-side">
+        <div class="intro">
+            <p class="intro-text">
+                This is not a real online service! You know you need something like this in your life 
+                to help you realize your deepest dreams. <br> Sign up <em>now</em> to get started.
+            </p>
+            <br>
+            <br>
+            <p class="intro-text">You know you want to.</p>
+        </div>
+
+        <div class="sign-in">
+            <p class="sign-in-text">Let's do this!</p>
+            <form action="" method="#" id="form-1">
+                <div class="form-layout">
+                    <div class="input-layout">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" required pattern="[a-zA-Z]+">
+                    </div>
+                    <div class="input-layout">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" required pattern="[a-zA-Z]+">
+                    </div>
+                </div>
+
+                <div class="form-layout">
+                    <div class="input-layout">
+                        <label for="email">Email</label> 
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="input-layout">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone" required pattern="\d{3}[\-]?\d{3}[\-]?\d{4}">
+                    </div>
+                </div>
+
+                <div class="form-layout">  
+                    <div class="input-layout">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="input-layout">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                        <p id="error"></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="create-account">
+            <button form="form-1">Create Account</button>
+            <p class="account">Already have an account? <a href="https://www.youtube.com/shorts/vR3pBNVN1y0" target="_blank" class="log-in"> Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>
